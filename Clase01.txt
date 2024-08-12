@@ -1,0 +1,80 @@
+Modelo jerarquico
+
+-Modelo de datos en el cual la organizacion es una estructura similar a un arbol
+-Cada nodo representa un registro, y las relaciones entre registros se representam como jerarquias
+-Todos los atributos de un registro especifico son catalogados bajo un tipo de entidad o tipo de registro
+
+Modelo de RED
+
+-Conformada por una coleccion o set de registros conectados entre si por medio de enlaces.
+-Un registro es una coleccion o conjunto atributos donde cada uno de ellos contiene solamente un unico valor
+-Proporciona mayor flexibilidad
+-Permite representar relaciones mas complejas entre datos
+
+Modelo racional
+
+-Modelo de datos basado en la logica de predicados y en la teoria de conjuntos.
+-Postulado en 1970 por Edgar Frank Codd (IBM)
+-Se basa en el uso de relaciones (conjuntos de datos o tuplas)
+-Es el modelo mas utilizado en la actualidad para modelar y administrar datos dinamicamente
+
+Orientado a objetos
+
+-La informacion se representa mediante objetos como en la POO
+-Un OBDMS extiende los lenguaje con datos persistentes de forma transparente
+-Si bien no es un modelo, la iniciativa ODMG proporciona estandares sobre base de datos orientada a objetos
+
+No SQL
+
+-Los datos almacenados no requieren estructuras fijas como los otros modelos
+-No soportan operaciones JOIN, ni garantizan ACID
+-Escalan bien horizontalmente
+-Se clasifican segun su forma de almacenar datos (clave-valor, tabulares, documentales, grafos)
+-Originadas por los desafios con el tratamiento de enormes volumenes de datos y elcrecimiento de la web (BIG DATA)
+-Se opto por el rendimiento sobre la consistencia y transaccionalidad
+
+SISTEMAS DE GESTION DE BASE DE DATOS
+
+Es un software que proporciona una interfaz entre los usuarios y las bases de datos
+
+Facilitan las siguientes funciones:
+
+Creacion y modidificacion de datos
+Consulta de datos
+Manejo de transacciones
+Segutidad y control de acceso
+Recuperacion de datos
+
+ESTRUCTURA DE ARCHIVOS
+
+El modelo racional se ocupa de la estructura, integridady manipulacion
+
+Sus componentes principales son:
+
+-Atributos: Menor unidad de informacion con sentido propio
+-Dominios: Fondo de valores legales de donde extraer los valores Reales de los atributos
+-Tuplas: Item de dato en una relacion
+-Relaciones: Conjunto de tuplas de un mismo tipo
+-Cabecera: Conjunto de pares (Atributo: Dominio). Ej: NroLibreta: Enteros
+-Cuerpo: Conjunto de tuplas
+
+Propiedades de las relaciones
+
+-No existen tuplas duplicadas
+-Las tuplas no estan ordenadas, de arriba hacia a abajo
+-LOs atributos no estan ordenados, de izquierda a derecha
+-Todos los valores de un atributo son atomicos (cada tupla contiene exactamente un valor para cada atributo)
+
+ADMINITRACION DE LA PERSISTENCIA
+
+Datos persistentes:
+-Datos que una vez almacenados en la base de datos, permaneces alu hasta que se elimenen explicitamente
+-Son gestionados por el DBMS y no se eliminan por efectos secundarios de procesos
+-Son escenciales para el funcionamiento de las bases de datos, proporcionan un almacenamiento confiable y duradero
+-Los datos permanecen inalterados y disponibles para consultas y actualizaciones segun sea necesario
+
+Datos Efmieros:
+-Datos que son transitorios como entradas y salidas de programas, instrucciones de control, y resultados intermedios
+-Pueden ser eliminados o modificacios como resultado de la ejecucion de programas o procesos temporales
+-La persistencia de diferencia claramente de la naturaleza transitoria de tipos de datos
+-Permite la gestion y el acceso continuo a los datos importantes de la empresa sin riesgo de perdida accidental durante el procesamiento
